@@ -7,8 +7,8 @@
 
 CONFIG = {
     # ── API Keys ──────────────────────────────────────────
-    "api_key":    "7ioIS33xEr3yGpAOQ2jW4KnMcQtPfKB7kjKMAtUpGAAYKeIFcUSgy5TQhXrE0wfF",   # Leave empty - use environment variables
-    "api_secret": "SrXedQwF0ZwUUIi2FcdvqJlIQqi8vvF3e1ytTWyjKZ3kE9TN0T1dIrPDJlolTlA4",   # Leave empty - use environment variables
+    "api_key":    "B9kW2hgYLUfB3zjJePo8w0pzpIAxLWeucz36IaiglAwE5OizCeNeTGfuYForiILK",
+    "api_secret": "Cvz8svfgCNfxR9f8ukUuLJIoxpi2I9fYsePiDvMv5MaaQdRXMnJIDS7wdqjnYqut",  # Leave empty - use environment variables
 
     # ── Trading ───────────────────────────────────────────
     "symbol":   "SOLUSDT",   # Coin to trade
