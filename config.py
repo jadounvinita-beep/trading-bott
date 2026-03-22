@@ -1,7 +1,7 @@
 CONFIG = {
     # API Keys - leave empty, Railway uses environment variables
-    "api_key":    "DoTY2EYdHLuYr0dCvwJO4NPFsu0vICwnKxCF4kgWyINmyWmHzdAovSVulA3xpLq5",
-    "api_secret": "WYWyG7KpFHvC0HbDytyq7UooqvInvbQoZQcvZKJ3G46xyAkdLypbVURizUf1Xo4C",
+    "api_key":    "B9kW2hgYLUfB3zjJePo8w0pzpIAxLWeucz36IaiglAwE5OizCeNeTGfuYForiILK",
+    "api_secret": "Cvz8svfgCNfxR9f8ukUuLJIoxpi2I9fYsePiDvMv5MaaQdRXMnJIDS7wdqjnYqut",
     "testnet": True,
 
     # Trading
