@@ -14,7 +14,7 @@ CONFIG = {
     "take_profit_pct":    0.03,
     "min_usdt_trade":     10.0,
     "max_daily_loss_pct": 3.0,
-    "max_trades_per_day": 50,
+    "max_trades_per_day": 10,
 
     # AI
     "confidence_threshold":   0.52,   # Lower = more trades
