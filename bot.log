@@ -1,0 +1,947 @@
+2026-03-20 21:08:11,169 [INFO] =======================================================
+2026-03-20 21:08:11,170 [INFO]   AI Trading Bot v3 - Auto Retraining
+2026-03-20 21:08:11,171 [INFO] =======================================================
+2026-03-20 21:08:12,405 [INFO] [TESTNET] Connected to Binance Testnet
+2026-03-20 21:08:12,405 [INFO] [AI] Training fresh model on CURRENT market data...
+2026-03-20 21:08:13,008 [INFO] [AI] Current SOLUSDT price: $89.1600
+2026-03-20 21:08:13,010 [INFO] [AI] Training on CURRENT SOLUSDT data...
+2026-03-20 21:08:13,012 [INFO] [AI] Price range in training: $88.52 - $90.36
+2026-03-20 21:08:13,016 [INFO] [AI] Training samples - BUY: 26 | SELL: 925
+2026-03-20 21:08:14,199 [INFO] [AI] Accuracy: 92.15%
+2026-03-20 21:08:14,234 [INFO] [AI] Model saved! Trained on current SOLUSDT prices
+2026-03-20 21:08:14,235 [INFO] [BOT] Trading: SOLUSDT
+2026-03-20 21:08:14,235 [INFO] -------------------------------------------------------
+2026-03-20 21:08:14,236 [ERROR] [ERROR] API Secret required for private endpoints
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading bot v3\trading_bot_v3\bot.py", line 336, in run_bot
+    usdt = get_usdt_balance(client)
+  File "C:\Users\Admin\Desktop\trading bot v3\trading_bot_v3\bot.py", line 217, in get_usdt_balance
+    return float(client.get_asset_balance(asset="USDT")["free"])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 2076, in get_asset_balance
+    res = self.get_account(**params)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 2053, in get_account
+    return self._get('account', True, data=params)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 415, in _get
+    return self._request_api('get', path, signed, version, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 378, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 356, in _request
+    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
+    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 268, in _generate_signature
+    return sig_func(query_string)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
+    assert self.API_SECRET, "API Secret required for private endpoints"
+           ^^^^^^^^^^^^^^^
+AssertionError: API Secret required for private endpoints
+2026-03-20 21:09:14,511 [ERROR] [ERROR] API Secret required for private endpoints
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading bot v3\trading_bot_v3\bot.py", line 336, in run_bot
+    usdt = get_usdt_balance(client)
+  File "C:\Users\Admin\Desktop\trading bot v3\trading_bot_v3\bot.py", line 217, in get_usdt_balance
+    return float(client.get_asset_balance(asset="USDT")["free"])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 2076, in get_asset_balance
+    res = self.get_account(**params)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 2053, in get_account
+    return self._get('account', True, data=params)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 415, in _get
+    return self._request_api('get', path, signed, version, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 378, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 356, in _request
+    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
+    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 268, in _generate_signature
+    return sig_func(query_string)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
+    assert self.API_SECRET, "API Secret required for private endpoints"
+           ^^^^^^^^^^^^^^^
+AssertionError: API Secret required for private endpoints
+2026-03-20 21:10:14,526 [ERROR] [ERROR] API Secret required for private endpoints
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading bot v3\trading_bot_v3\bot.py", line 336, in run_bot
+    usdt = get_usdt_balance(client)
+  File "C:\Users\Admin\Desktop\trading bot v3\trading_bot_v3\bot.py", line 217, in get_usdt_balance
+    return float(client.get_asset_balance(asset="USDT")["free"])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 2076, in get_asset_balance
+    res = self.get_account(**params)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 2053, in get_account
+    return self._get('account', True, data=params)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 415, in _get
+    return self._request_api('get', path, signed, version, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 378, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 356, in _request
+    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
+    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 268, in _generate_signature
+    return sig_func(query_string)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
+    assert self.API_SECRET, "API Secret required for private endpoints"
+           ^^^^^^^^^^^^^^^
+AssertionError: API Secret required for private endpoints
+2026-03-20 21:11:14,576 [ERROR] [ERROR] API Secret required for private endpoints
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading bot v3\trading_bot_v3\bot.py", line 336, in run_bot
+    usdt = get_usdt_balance(client)
+  File "C:\Users\Admin\Desktop\trading bot v3\trading_bot_v3\bot.py", line 217, in get_usdt_balance
+    return float(client.get_asset_balance(asset="USDT")["free"])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 2076, in get_asset_balance
+    res = self.get_account(**params)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 2053, in get_account
+    return self._get('account', True, data=params)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 415, in _get
+    return self._request_api('get', path, signed, version, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 378, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 356, in _request
+    kwargs = self._get_request_kwargs(method, signed, force_params, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 313, in _get_request_kwargs
+    kwargs['data']['signature'] = self._generate_signature(kwargs['data'])
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 268, in _generate_signature
+    return sig_func(query_string)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 259, in _hmac_signature
+    assert self.API_SECRET, "API Secret required for private endpoints"
+           ^^^^^^^^^^^^^^^
+AssertionError: API Secret required for private endpoints
+2026-03-20 21:11:30,601 [INFO] =======================================================
+2026-03-20 21:11:30,601 [INFO]   AI Trading Bot v3 - Auto Retraining
+2026-03-20 21:11:30,602 [INFO] =======================================================
+2026-03-20 21:11:31,411 [INFO] [TESTNET] Connected to Binance Testnet
+2026-03-20 21:11:31,411 [INFO] [AI] Training fresh model on CURRENT market data...
+2026-03-20 21:11:31,905 [INFO] [AI] Current SOLUSDT price: $89.0100
+2026-03-20 21:11:31,906 [INFO] [AI] Training on CURRENT SOLUSDT data...
+2026-03-20 21:11:31,907 [INFO] [AI] Price range in training: $88.52 - $90.36
+2026-03-20 21:11:31,909 [INFO] [AI] Training samples - BUY: 26 | SELL: 925
+2026-03-20 21:11:32,779 [INFO] [AI] Accuracy: 90.05%
+2026-03-20 21:11:32,790 [INFO] [AI] Model saved! Trained on current SOLUSDT prices
+2026-03-20 21:11:32,790 [INFO] [BOT] Trading: SOLUSDT
+2026-03-20 21:11:32,791 [INFO] -------------------------------------------------------
+2026-03-20 21:11:33,075 [ERROR] [ERROR] Binance: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+2026-03-20 21:12:33,678 [ERROR] [ERROR] Binance: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+2026-03-20 21:13:34,166 [ERROR] [ERROR] Binance: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+2026-03-20 21:14:34,696 [ERROR] [ERROR] Binance: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+2026-03-20 21:15:35,320 [ERROR] [ERROR] Binance: APIError(code=-2015): Invalid API-key, IP, or permissions for action.
+2026-03-20 21:16:12,721 [INFO] =======================================================
+2026-03-20 21:16:12,721 [INFO]   AI Trading Bot v3 - Auto Retraining
+2026-03-20 21:16:12,722 [INFO] =======================================================
+2026-03-20 21:16:13,537 [INFO] [TESTNET] Connected to Binance Testnet
+2026-03-20 21:16:13,538 [INFO] [AI] Training fresh model on CURRENT market data...
+2026-03-20 21:16:14,047 [INFO] [AI] Current SOLUSDT price: $89.0100
+2026-03-20 21:16:14,049 [INFO] [AI] Training on CURRENT SOLUSDT data...
+2026-03-20 21:16:14,050 [INFO] [AI] Price range in training: $88.52 - $90.36
+2026-03-20 21:16:14,053 [INFO] [AI] Training samples - BUY: 26 | SELL: 925
+2026-03-20 21:16:14,972 [INFO] [AI] Accuracy: 90.05%
+2026-03-20 21:16:14,987 [INFO] [AI] Model saved! Trained on current SOLUSDT prices
+2026-03-20 21:16:14,988 [INFO] [BOT] Trading: SOLUSDT
+2026-03-20 21:16:14,988 [INFO] -------------------------------------------------------
+2026-03-20 21:16:15,422 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:16:17,114 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:16:17,118 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:16:17,393 [INFO] [PRICE] $89.0100
+2026-03-20 21:16:17,399 [INFO] [TECH] BUY: 0.00% | SELL: 100.00%
+2026-03-20 21:16:18,208 [INFO] [SIGNAL] Tech:SELL(100%) F&G:BUY News:HOLD Score:-0.350
+2026-03-20 21:16:18,209 [INFO] [FINAL] SOLUSDT: SELL (strength:0.350)
+2026-03-20 21:16:18,209 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:16:48,751 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:16:50,265 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:16:50,267 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:16:50,865 [INFO] [PRICE] $89.0100
+2026-03-20 21:16:50,869 [INFO] [TECH] BUY: 0.00% | SELL: 100.00%
+2026-03-20 21:16:51,853 [INFO] [SIGNAL] Tech:SELL(100%) F&G:BUY News:HOLD Score:-0.350
+2026-03-20 21:16:51,854 [INFO] [FINAL] SOLUSDT: SELL (strength:0.350)
+2026-03-20 21:16:51,854 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:17:22,145 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:17:23,662 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:17:23,665 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:17:24,170 [INFO] [PRICE] $88.9200
+2026-03-20 21:17:24,173 [INFO] [TECH] BUY: 0.00% | SELL: 100.00%
+2026-03-20 21:17:24,933 [INFO] [SIGNAL] Tech:SELL(100%) F&G:BUY News:HOLD Score:-0.350
+2026-03-20 21:17:24,934 [INFO] [FINAL] SOLUSDT: SELL (strength:0.350)
+2026-03-20 21:17:24,934 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:17:55,430 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:17:57,604 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:17:57,607 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:17:58,453 [INFO] [PRICE] $89.0300
+2026-03-20 21:17:58,458 [INFO] [TECH] BUY: 0.00% | SELL: 100.00%
+2026-03-20 21:17:59,995 [INFO] [SIGNAL] Tech:SELL(100%) F&G:BUY News:HOLD Score:-0.350
+2026-03-20 21:17:59,996 [INFO] [FINAL] SOLUSDT: SELL (strength:0.350)
+2026-03-20 21:17:59,996 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:18:30,621 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:18:32,047 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:18:32,050 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:18:32,766 [INFO] [PRICE] $89.0800
+2026-03-20 21:18:32,771 [INFO] [TECH] BUY: 0.00% | SELL: 100.00%
+2026-03-20 21:18:33,604 [INFO] [SIGNAL] Tech:SELL(100%) F&G:BUY News:HOLD Score:-0.350
+2026-03-20 21:18:33,604 [INFO] [FINAL] SOLUSDT: SELL (strength:0.350)
+2026-03-20 21:18:33,604 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:18:50,890 [INFO] =======================================================
+2026-03-20 21:18:50,891 [INFO]   AI Trading Bot v3 - Auto Retraining
+2026-03-20 21:18:50,891 [INFO] =======================================================
+2026-03-20 21:18:52,212 [INFO] [TESTNET] Connected to Binance Testnet
+2026-03-20 21:18:52,212 [INFO] [AI] Training fresh model on CURRENT market data...
+2026-03-20 21:18:52,901 [INFO] [AI] Current BTCUSDT price: $69928.3400
+2026-03-20 21:18:52,903 [INFO] [AI] Training on CURRENT BTCUSDT data...
+2026-03-20 21:18:52,904 [INFO] [AI] Price range in training: $69506.88 - $71332.13
+2026-03-20 21:18:52,906 [INFO] [AI] Training samples - BUY: 8 | SELL: 943
+2026-03-20 21:18:53,615 [INFO] [AI] Accuracy: 97.91%
+2026-03-20 21:18:53,622 [INFO] [AI] Model saved! Trained on current BTCUSDT prices
+2026-03-20 21:18:53,622 [INFO] [BOT] Trading: BTCUSDT
+2026-03-20 21:18:53,622 [INFO] -------------------------------------------------------
+2026-03-20 21:18:53,850 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:18:55,206 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:18:55,214 [INFO] 
+--- BTCUSDT ---
+2026-03-20 21:18:55,675 [INFO] [PRICE] $69928.3400
+2026-03-20 21:18:55,680 [INFO] [TECH] BUY: 0.00% | SELL: 100.00%
+2026-03-20 21:18:56,380 [INFO] [SIGNAL] Tech:SELL(100%) F&G:BUY News:HOLD Score:-0.350
+2026-03-20 21:18:56,380 [INFO] [FINAL] BTCUSDT: SELL (strength:0.350)
+2026-03-20 21:18:56,381 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:19:26,568 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:19:28,431 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:19:28,434 [INFO] 
+--- BTCUSDT ---
+2026-03-20 21:19:29,038 [INFO] [PRICE] $69918.1600
+2026-03-20 21:19:29,042 [INFO] [TECH] BUY: 0.00% | SELL: 100.00%
+2026-03-20 21:19:30,113 [INFO] [SIGNAL] Tech:SELL(100%) F&G:BUY News:HOLD Score:-0.350
+2026-03-20 21:19:30,114 [INFO] [FINAL] BTCUSDT: SELL (strength:0.350)
+2026-03-20 21:19:30,114 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:20:00,607 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:20:02,244 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:20:02,246 [INFO] 
+--- BTCUSDT ---
+2026-03-20 21:20:03,151 [INFO] [PRICE] $69940.5000
+2026-03-20 21:20:03,155 [INFO] [TECH] BUY: 0.00% | SELL: 100.00%
+2026-03-20 21:20:03,865 [INFO] [SIGNAL] Tech:SELL(100%) F&G:BUY News:HOLD Score:-0.350
+2026-03-20 21:20:03,866 [INFO] [FINAL] BTCUSDT: SELL (strength:0.350)
+2026-03-20 21:20:03,866 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:20:34,188 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:23:31,444 [INFO] =======================================================
+2026-03-20 21:23:31,445 [INFO]   AI Trading Bot v3 - Auto Retraining
+2026-03-20 21:23:31,446 [INFO] =======================================================
+2026-03-20 21:23:32,397 [INFO] [TESTNET] Connected to Binance Testnet
+2026-03-20 21:23:32,397 [INFO] [AI] Training fresh model on CURRENT market data...
+2026-03-20 21:25:14,349 [INFO] =======================================================
+2026-03-20 21:25:14,350 [INFO]   AI Trading Bot v3 - Auto Retraining
+2026-03-20 21:25:14,350 [INFO] =======================================================
+2026-03-20 21:25:15,659 [INFO] [TESTNET] Connected to Binance Testnet
+2026-03-20 21:25:15,659 [INFO] [AI] Training fresh model on CURRENT market data...
+2026-03-20 21:25:16,082 [INFO] [AI] Current SOLUSDT price: $88.7700
+2026-03-20 21:25:16,083 [INFO] [AI] Training on CURRENT SOLUSDT data...
+2026-03-20 21:25:16,084 [INFO] [AI] Price range in training: $84.59 - $97.27
+2026-03-20 21:25:16,086 [INFO] [AI] Training samples - BUY: 218 | SELL: 733
+2026-03-20 21:25:16,912 [INFO] [AI] Accuracy: 72.25%
+2026-03-20 21:25:16,920 [INFO] [AI] Model saved! Trained on current SOLUSDT prices
+2026-03-20 21:25:16,921 [INFO] [BOT] Trading: SOLUSDT
+2026-03-20 21:25:16,921 [INFO] -------------------------------------------------------
+2026-03-20 21:25:17,197 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:25:19,362 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:25:19,365 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:25:19,812 [INFO] [PRICE] $88.7700
+2026-03-20 21:25:19,816 [INFO] [TECH] BUY: 14.74% | SELL: 85.26%
+2026-03-20 21:25:20,643 [INFO] [SIGNAL] Tech:SELL(85%) F&G:BUY News:HOLD Score:-0.262
+2026-03-20 21:25:20,644 [INFO] [FINAL] SOLUSDT: SELL (strength:0.262)
+2026-03-20 21:25:20,644 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:25:51,194 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:25:52,542 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:25:52,545 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:25:53,193 [INFO] [PRICE] $88.8200
+2026-03-20 21:25:53,197 [INFO] [TECH] BUY: 11.32% | SELL: 88.68%
+2026-03-20 21:25:53,872 [INFO] [SIGNAL] Tech:SELL(89%) F&G:BUY News:HOLD Score:-0.282
+2026-03-20 21:25:53,872 [INFO] [FINAL] SOLUSDT: SELL (strength:0.282)
+2026-03-20 21:25:53,873 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:26:24,162 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:26:25,594 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:26:25,597 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:26:26,276 [INFO] [PRICE] $88.7300
+2026-03-20 21:26:26,279 [INFO] [TECH] BUY: 16.02% | SELL: 83.98%
+2026-03-20 21:26:28,272 [INFO] [SIGNAL] Tech:SELL(84%) F&G:BUY News:HOLD Score:-0.254
+2026-03-20 21:26:28,272 [INFO] [FINAL] SOLUSDT: SELL (strength:0.254)
+2026-03-20 21:26:28,273 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:26:58,772 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:27:00,321 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:27:00,324 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:27:00,988 [INFO] [PRICE] $88.7500
+2026-03-20 21:27:00,991 [INFO] [TECH] BUY: 16.02% | SELL: 83.98%
+2026-03-20 21:27:02,781 [INFO] [SIGNAL] Tech:SELL(84%) F&G:BUY News:HOLD Score:-0.254
+2026-03-20 21:27:02,782 [INFO] [FINAL] SOLUSDT: SELL (strength:0.254)
+2026-03-20 21:27:02,782 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:27:33,021 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:27:34,720 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:27:34,721 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:27:35,254 [INFO] [PRICE] $88.7800
+2026-03-20 21:27:35,257 [INFO] [TECH] BUY: 16.02% | SELL: 83.98%
+2026-03-20 21:27:36,615 [INFO] [SIGNAL] Tech:SELL(84%) F&G:BUY News:HOLD Score:-0.254
+2026-03-20 21:27:36,616 [INFO] [FINAL] SOLUSDT: SELL (strength:0.254)
+2026-03-20 21:27:36,616 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:28:07,279 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:28:08,620 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:28:08,622 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:28:09,583 [INFO] [PRICE] $88.8300
+2026-03-20 21:28:09,587 [INFO] [TECH] BUY: 10.46% | SELL: 89.54%
+2026-03-20 21:28:12,509 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.287
+2026-03-20 21:28:12,510 [INFO] [FINAL] SOLUSDT: SELL (strength:0.287)
+2026-03-20 21:28:12,510 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:28:43,021 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:28:44,859 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:28:44,863 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:28:45,781 [INFO] [PRICE] $88.8400
+2026-03-20 21:28:45,786 [INFO] [TECH] BUY: 9.84% | SELL: 90.16%
+2026-03-20 21:28:46,775 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.291
+2026-03-20 21:28:46,776 [INFO] [FINAL] SOLUSDT: SELL (strength:0.291)
+2026-03-20 21:28:46,776 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:29:16,997 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:29:18,749 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:29:18,753 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:29:19,250 [INFO] [PRICE] $88.8900
+2026-03-20 21:29:19,255 [INFO] [TECH] BUY: 9.84% | SELL: 90.16%
+2026-03-20 21:29:20,480 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.291
+2026-03-20 21:29:20,480 [INFO] [FINAL] SOLUSDT: SELL (strength:0.291)
+2026-03-20 21:29:20,481 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:29:50,966 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:29:52,524 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:29:52,527 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:29:53,543 [INFO] [PRICE] $88.9600
+2026-03-20 21:29:53,549 [INFO] [TECH] BUY: 7.99% | SELL: 92.01%
+2026-03-20 21:29:54,575 [INFO] [SIGNAL] Tech:SELL(92%) F&G:BUY News:HOLD Score:-0.302
+2026-03-20 21:29:54,576 [INFO] [FINAL] SOLUSDT: SELL (strength:0.302)
+2026-03-20 21:29:54,576 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:30:25,091 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:30:26,949 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:30:26,952 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:30:27,598 [INFO] [PRICE] $88.9800
+2026-03-20 21:30:27,603 [INFO] [TECH] BUY: 14.68% | SELL: 85.32%
+2026-03-20 21:30:29,692 [INFO] [SIGNAL] Tech:SELL(85%) F&G:BUY News:HOLD Score:-0.262
+2026-03-20 21:30:29,693 [INFO] [FINAL] SOLUSDT: SELL (strength:0.262)
+2026-03-20 21:30:29,694 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:31:00,206 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:31:02,057 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:31:02,060 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:31:02,693 [INFO] [PRICE] $88.9900
+2026-03-20 21:31:02,700 [INFO] [TECH] BUY: 14.68% | SELL: 85.32%
+2026-03-20 21:31:03,801 [INFO] [SIGNAL] Tech:SELL(85%) F&G:BUY News:HOLD Score:-0.262
+2026-03-20 21:31:03,802 [INFO] [FINAL] SOLUSDT: SELL (strength:0.262)
+2026-03-20 21:31:03,802 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:31:20,312 [INFO] =======================================================
+2026-03-20 21:31:20,312 [INFO]   AI Trading Bot v3 - Auto Retraining
+2026-03-20 21:31:20,312 [INFO] =======================================================
+2026-03-20 21:31:21,723 [INFO] [TESTNET] Connected to Binance Testnet
+2026-03-20 21:31:21,724 [INFO] [AI] Training fresh model on CURRENT market data...
+2026-03-20 21:31:22,436 [INFO] [AI] Current SOLUSDT price: $89.0800
+2026-03-20 21:31:22,438 [INFO] [AI] Training on CURRENT SOLUSDT data...
+2026-03-20 21:31:22,439 [INFO] [AI] Price range in training: $84.59 - $97.27
+2026-03-20 21:31:22,441 [INFO] [AI] Training samples - BUY: 218 | SELL: 733
+2026-03-20 21:31:23,274 [INFO] [AI] Accuracy: 71.20%
+2026-03-20 21:31:23,280 [INFO] [AI] Model saved! Trained on current SOLUSDT prices
+2026-03-20 21:31:23,281 [INFO] [BOT] Trading: SOLUSDT
+2026-03-20 21:31:23,282 [INFO] -------------------------------------------------------
+2026-03-20 21:31:23,456 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:31:24,940 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:31:24,943 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:31:25,370 [INFO] [PRICE] $89.0500
+2026-03-20 21:31:25,375 [INFO] [TECH] BUY: 8.19% | SELL: 91.81%
+2026-03-20 21:31:26,255 [INFO] [SIGNAL] Tech:SELL(92%) F&G:BUY News:HOLD Score:-0.301
+2026-03-20 21:31:26,255 [INFO] [FINAL] SOLUSDT: SELL (strength:0.301)
+2026-03-20 21:31:26,255 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:31:56,755 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:31:58,418 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:31:58,421 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:31:59,308 [INFO] [PRICE] $89.1000
+2026-03-20 21:31:59,312 [INFO] [TECH] BUY: 7.49% | SELL: 92.51%
+2026-03-20 21:32:00,248 [INFO] [SIGNAL] Tech:SELL(93%) F&G:BUY News:HOLD Score:-0.305
+2026-03-20 21:32:00,249 [INFO] [FINAL] SOLUSDT: SELL (strength:0.305)
+2026-03-20 21:32:00,249 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:43:34,895 [ERROR] [ERROR] ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\util\retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\http\client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\socket.py", line 725, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\Desktop\trading bot v3\trading_bot_v3\bot.py", line 336, in run_bot
+    usdt = get_usdt_balance(client)
+  File "C:\Users\Admin\Desktop\trading bot v3\trading_bot_v3\bot.py", line 217, in get_usdt_balance
+    return float(client.get_asset_balance(asset="USDT")["free"])
+                 ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 2076, in get_asset_balance
+    res = self.get_account(**params)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 2053, in get_account
+    return self._get('account', True, data=params)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 415, in _get
+    return self._request_api('get', path, signed, version, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 378, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\binance\client.py", line 358, in _request
+    self.response = getattr(self.session, method)(uri, **kwargs)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\requests\adapters.py", line 659, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-03-20 21:44:15,925 [INFO] =======================================================
+2026-03-20 21:44:15,927 [INFO]   AI Trading Bot v3 - Auto Retraining
+2026-03-20 21:44:15,927 [INFO] =======================================================
+2026-03-20 21:44:17,111 [INFO] [TESTNET] Connected to Binance Testnet
+2026-03-20 21:44:17,112 [INFO] [AI] Training fresh model on CURRENT market data...
+2026-03-20 21:44:17,757 [INFO] [AI] Current SOLUSDT price: $89.0700
+2026-03-20 21:44:17,758 [INFO] [AI] Training on CURRENT SOLUSDT data...
+2026-03-20 21:44:17,758 [INFO] [AI] Price range in training: $84.59 - $97.27
+2026-03-20 21:44:17,760 [INFO] [AI] Training samples - BUY: 218 | SELL: 733
+2026-03-20 21:44:18,685 [INFO] [AI] Accuracy: 71.20%
+2026-03-20 21:44:18,694 [INFO] [AI] Model saved! Trained on current SOLUSDT prices
+2026-03-20 21:44:18,694 [INFO] [BOT] Trading: SOLUSDT
+2026-03-20 21:44:18,694 [INFO] -------------------------------------------------------
+2026-03-20 21:44:18,877 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:44:20,177 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:44:20,208 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:44:20,611 [INFO] [PRICE] $89.0700
+2026-03-20 21:44:20,618 [INFO] [TECH] BUY: 6.94% | SELL: 93.06%
+2026-03-20 21:44:21,352 [INFO] [SIGNAL] Tech:SELL(93%) F&G:BUY News:HOLD Score:-0.308
+2026-03-20 21:44:21,353 [INFO] [FINAL] SOLUSDT: SELL (strength:0.308)
+2026-03-20 21:44:21,353 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:44:51,877 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:44:53,315 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:44:53,319 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:44:54,196 [INFO] [PRICE] $89.0300
+2026-03-20 21:44:54,199 [INFO] [TECH] BUY: 7.88% | SELL: 92.12%
+2026-03-20 21:44:54,752 [INFO] [SIGNAL] Tech:SELL(92%) F&G:BUY News:HOLD Score:-0.303
+2026-03-20 21:44:54,753 [INFO] [FINAL] SOLUSDT: SELL (strength:0.303)
+2026-03-20 21:44:54,753 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:45:24,933 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:45:26,195 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:45:26,197 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:45:26,592 [INFO] [PRICE] $88.9800
+2026-03-20 21:45:26,594 [INFO] [TECH] BUY: 20.64% | SELL: 79.36%
+2026-03-20 21:45:27,339 [INFO] [SIGNAL] Tech:SELL(79%) F&G:BUY News:HOLD Score:-0.226
+2026-03-20 21:45:27,340 [INFO] [FINAL] SOLUSDT: SELL (strength:0.226)
+2026-03-20 21:45:27,340 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:45:57,826 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:45:59,179 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:45:59,181 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:45:59,749 [INFO] [PRICE] $88.8800
+2026-03-20 21:45:59,753 [INFO] [TECH] BUY: 10.45% | SELL: 89.55%
+2026-03-20 21:46:00,531 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.287
+2026-03-20 21:46:00,531 [INFO] [FINAL] SOLUSDT: SELL (strength:0.287)
+2026-03-20 21:46:00,531 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:46:30,800 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:46:32,380 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:46:32,381 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:46:32,658 [INFO] [PRICE] $88.8600
+2026-03-20 21:46:32,672 [INFO] [TECH] BUY: 10.45% | SELL: 89.55%
+2026-03-20 21:46:33,607 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.287
+2026-03-20 21:46:33,607 [INFO] [FINAL] SOLUSDT: SELL (strength:0.287)
+2026-03-20 21:46:33,608 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:47:04,088 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:47:05,395 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:47:05,402 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:47:05,947 [INFO] [PRICE] $88.8300
+2026-03-20 21:47:05,950 [INFO] [TECH] BUY: 11.45% | SELL: 88.55%
+2026-03-20 21:47:06,774 [INFO] [SIGNAL] Tech:SELL(89%) F&G:BUY News:HOLD Score:-0.281
+2026-03-20 21:47:06,775 [INFO] [FINAL] SOLUSDT: SELL (strength:0.281)
+2026-03-20 21:47:06,775 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:47:37,297 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:47:38,434 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:47:38,458 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:47:39,007 [INFO] [PRICE] $88.8300
+2026-03-20 21:47:39,010 [INFO] [TECH] BUY: 11.45% | SELL: 88.55%
+2026-03-20 21:47:39,690 [INFO] [SIGNAL] Tech:SELL(89%) F&G:BUY News:HOLD Score:-0.281
+2026-03-20 21:47:39,690 [INFO] [FINAL] SOLUSDT: SELL (strength:0.281)
+2026-03-20 21:47:39,691 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:48:10,209 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:48:11,433 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:48:11,435 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:48:12,030 [INFO] [PRICE] $89.0400
+2026-03-20 21:48:12,034 [INFO] [TECH] BUY: 8.51% | SELL: 91.49%
+2026-03-20 21:48:12,755 [INFO] [SIGNAL] Tech:SELL(91%) F&G:BUY News:HOLD Score:-0.299
+2026-03-20 21:48:12,755 [INFO] [FINAL] SOLUSDT: SELL (strength:0.299)
+2026-03-20 21:48:12,756 [INFO] [AI] Retraining with latest data...
+2026-03-20 21:48:13,646 [INFO] [AI] Training on CURRENT SOLUSDT data...
+2026-03-20 21:48:13,649 [INFO] [AI] Price range in training: $84.59 - $97.27
+2026-03-20 21:48:13,655 [INFO] [AI] Training samples - BUY: 218 | SELL: 733
+2026-03-20 21:48:14,674 [INFO] [AI] Accuracy: 73.82%
+2026-03-20 21:48:14,698 [INFO] [AI] Model saved! Trained on current SOLUSDT prices
+2026-03-20 21:48:14,700 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:48:45,250 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:48:46,554 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:48:46,557 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:48:47,435 [INFO] [PRICE] $89.0500
+2026-03-20 21:48:47,443 [INFO] [TECH] BUY: 10.48% | SELL: 89.52%
+2026-03-20 21:48:48,164 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.287
+2026-03-20 21:48:48,165 [INFO] [FINAL] SOLUSDT: SELL (strength:0.287)
+2026-03-20 21:48:48,165 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:49:18,731 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:49:19,992 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:49:19,994 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:49:20,837 [INFO] [PRICE] $89.1100
+2026-03-20 21:49:20,839 [INFO] [TECH] BUY: 10.86% | SELL: 89.14%
+2026-03-20 21:49:21,419 [INFO] [SIGNAL] Tech:SELL(89%) F&G:BUY News:HOLD Score:-0.285
+2026-03-20 21:49:21,419 [INFO] [FINAL] SOLUSDT: SELL (strength:0.285)
+2026-03-20 21:49:21,419 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:49:52,190 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:49:53,398 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:49:53,399 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:49:53,949 [INFO] [PRICE] $89.1900
+2026-03-20 21:49:53,952 [INFO] [TECH] BUY: 11.97% | SELL: 88.03%
+2026-03-20 21:49:54,551 [INFO] [SIGNAL] Tech:SELL(88%) F&G:BUY News:HOLD Score:-0.278
+2026-03-20 21:49:54,552 [INFO] [FINAL] SOLUSDT: SELL (strength:0.278)
+2026-03-20 21:49:54,552 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:50:25,053 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:50:26,292 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:50:26,293 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:50:26,702 [INFO] [PRICE] $89.1500
+2026-03-20 21:50:26,705 [INFO] [TECH] BUY: 9.88% | SELL: 90.12%
+2026-03-20 21:50:27,250 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.291
+2026-03-20 21:50:27,250 [INFO] [FINAL] SOLUSDT: SELL (strength:0.291)
+2026-03-20 21:50:27,251 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:50:57,732 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:50:58,874 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:50:58,876 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:50:59,425 [INFO] [PRICE] $89.1500
+2026-03-20 21:50:59,428 [INFO] [TECH] BUY: 9.88% | SELL: 90.12%
+2026-03-20 21:51:00,208 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.291
+2026-03-20 21:51:00,208 [INFO] [FINAL] SOLUSDT: SELL (strength:0.291)
+2026-03-20 21:51:00,209 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:51:30,701 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:51:31,890 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:51:31,892 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:51:32,419 [INFO] [PRICE] $89.1500
+2026-03-20 21:51:32,423 [INFO] [TECH] BUY: 9.88% | SELL: 90.12%
+2026-03-20 21:51:33,046 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.291
+2026-03-20 21:51:33,046 [INFO] [FINAL] SOLUSDT: SELL (strength:0.291)
+2026-03-20 21:51:33,047 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:52:03,533 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:52:04,671 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:52:04,672 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:52:05,495 [INFO] [PRICE] $89.1100
+2026-03-20 21:52:05,498 [INFO] [TECH] BUY: 9.68% | SELL: 90.32%
+2026-03-20 21:52:06,063 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.292
+2026-03-20 21:52:06,063 [INFO] [FINAL] SOLUSDT: SELL (strength:0.292)
+2026-03-20 21:52:06,063 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:52:36,549 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:52:37,676 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:52:37,678 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:52:38,239 [INFO] [PRICE] $89.0300
+2026-03-20 21:52:38,241 [INFO] [TECH] BUY: 8.79% | SELL: 91.21%
+2026-03-20 21:52:38,931 [INFO] [SIGNAL] Tech:SELL(91%) F&G:BUY News:HOLD Score:-0.297
+2026-03-20 21:52:38,931 [INFO] [FINAL] SOLUSDT: SELL (strength:0.297)
+2026-03-20 21:52:38,931 [INFO] [AI] Retraining with latest data...
+2026-03-20 21:52:39,752 [INFO] [AI] Training on CURRENT SOLUSDT data...
+2026-03-20 21:52:39,752 [INFO] [AI] Price range in training: $84.59 - $97.27
+2026-03-20 21:52:39,753 [INFO] [AI] Training samples - BUY: 218 | SELL: 733
+2026-03-20 21:52:40,409 [INFO] [AI] Accuracy: 73.82%
+2026-03-20 21:52:40,417 [INFO] [AI] Model saved! Trained on current SOLUSDT prices
+2026-03-20 21:52:40,417 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:53:10,898 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:53:12,307 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:53:12,308 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:53:12,847 [INFO] [PRICE] $89.1100
+2026-03-20 21:53:12,850 [INFO] [TECH] BUY: 9.68% | SELL: 90.32%
+2026-03-20 21:53:13,535 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.292
+2026-03-20 21:53:13,535 [INFO] [FINAL] SOLUSDT: SELL (strength:0.292)
+2026-03-20 21:53:13,535 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:53:43,729 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:53:45,022 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:53:45,024 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:53:45,463 [INFO] [PRICE] $89.1600
+2026-03-20 21:53:45,468 [INFO] [TECH] BUY: 11.08% | SELL: 88.92%
+2026-03-20 21:53:46,421 [INFO] [SIGNAL] Tech:SELL(89%) F&G:BUY News:HOLD Score:-0.283
+2026-03-20 21:53:46,421 [INFO] [FINAL] SOLUSDT: SELL (strength:0.283)
+2026-03-20 21:53:46,422 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:54:16,620 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:54:17,929 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:54:17,930 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:54:18,382 [INFO] [PRICE] $89.1200
+2026-03-20 21:54:18,384 [INFO] [TECH] BUY: 9.88% | SELL: 90.12%
+2026-03-20 21:54:19,457 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.291
+2026-03-20 21:54:19,457 [INFO] [FINAL] SOLUSDT: SELL (strength:0.291)
+2026-03-20 21:54:19,458 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:54:49,685 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:54:51,602 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:54:51,604 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:54:52,217 [INFO] [PRICE] $89.1200
+2026-03-20 21:54:52,219 [INFO] [TECH] BUY: 9.88% | SELL: 90.12%
+2026-03-20 21:54:53,047 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.291
+2026-03-20 21:54:53,047 [INFO] [FINAL] SOLUSDT: SELL (strength:0.291)
+2026-03-20 21:54:53,047 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:55:23,238 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:55:24,699 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:55:24,704 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:55:25,117 [INFO] [PRICE] $89.0500
+2026-03-20 21:55:25,119 [INFO] [TECH] BUY: 8.79% | SELL: 91.21%
+2026-03-20 21:55:26,728 [INFO] [SIGNAL] Tech:SELL(91%) F&G:BUY News:HOLD Score:-0.297
+2026-03-20 21:55:26,729 [INFO] [FINAL] SOLUSDT: SELL (strength:0.297)
+2026-03-20 21:55:26,729 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:55:57,340 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:55:58,617 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:55:58,618 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:55:59,179 [INFO] [PRICE] $89.0700
+2026-03-20 21:55:59,181 [INFO] [TECH] BUY: 9.17% | SELL: 90.83%
+2026-03-20 21:55:59,803 [INFO] [SIGNAL] Tech:SELL(91%) F&G:BUY News:HOLD Score:-0.295
+2026-03-20 21:55:59,803 [INFO] [FINAL] SOLUSDT: SELL (strength:0.295)
+2026-03-20 21:55:59,804 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:56:30,025 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:56:31,304 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:56:31,306 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:56:31,707 [INFO] [PRICE] $89.0200
+2026-03-20 21:56:31,709 [INFO] [TECH] BUY: 10.13% | SELL: 89.87%
+2026-03-20 21:56:32,632 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.289
+2026-03-20 21:56:32,633 [INFO] [FINAL] SOLUSDT: SELL (strength:0.289)
+2026-03-20 21:56:32,633 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:57:03,136 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:57:04,469 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:57:04,471 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:57:05,396 [INFO] [PRICE] $89.0000
+2026-03-20 21:57:05,398 [INFO] [TECH] BUY: 9.67% | SELL: 90.33%
+2026-03-20 21:57:06,107 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.292
+2026-03-20 21:57:06,119 [INFO] [FINAL] SOLUSDT: SELL (strength:0.292)
+2026-03-20 21:57:06,123 [INFO] [AI] Retraining with latest data...
+2026-03-20 21:57:06,363 [INFO] [AI] Training on CURRENT SOLUSDT data...
+2026-03-20 21:57:06,363 [INFO] [AI] Price range in training: $84.59 - $97.27
+2026-03-20 21:57:06,365 [INFO] [AI] Training samples - BUY: 218 | SELL: 733
+2026-03-20 21:57:06,906 [INFO] [AI] Accuracy: 73.82%
+2026-03-20 21:57:06,913 [INFO] [AI] Model saved! Trained on current SOLUSDT prices
+2026-03-20 21:57:06,913 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:57:37,124 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:57:38,416 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:57:38,417 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:57:38,806 [INFO] [PRICE] $89.0300
+2026-03-20 21:57:38,808 [INFO] [TECH] BUY: 8.79% | SELL: 91.21%
+2026-03-20 21:57:40,215 [INFO] [SIGNAL] Tech:SELL(91%) F&G:BUY News:HOLD Score:-0.297
+2026-03-20 21:57:40,215 [INFO] [FINAL] SOLUSDT: SELL (strength:0.297)
+2026-03-20 21:57:40,215 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:58:10,729 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:58:11,967 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:58:11,968 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:58:12,805 [INFO] [PRICE] $89.0700
+2026-03-20 21:58:12,808 [INFO] [TECH] BUY: 9.17% | SELL: 90.83%
+2026-03-20 21:58:13,803 [INFO] [SIGNAL] Tech:SELL(91%) F&G:BUY News:HOLD Score:-0.295
+2026-03-20 21:58:13,803 [INFO] [FINAL] SOLUSDT: SELL (strength:0.295)
+2026-03-20 21:58:13,804 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:58:43,986 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:58:46,255 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:58:46,257 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:58:47,679 [INFO] [PRICE] $89.0600
+2026-03-20 21:58:47,681 [INFO] [TECH] BUY: 9.95% | SELL: 90.05%
+2026-03-20 21:58:48,857 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.290
+2026-03-20 21:58:48,857 [INFO] [FINAL] SOLUSDT: SELL (strength:0.290)
+2026-03-20 21:58:48,857 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:59:19,384 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:59:21,097 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:59:21,100 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:59:21,707 [INFO] [PRICE] $89.0600
+2026-03-20 21:59:21,722 [INFO] [TECH] BUY: 9.95% | SELL: 90.05%
+2026-03-20 21:59:22,552 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.290
+2026-03-20 21:59:22,552 [INFO] [FINAL] SOLUSDT: SELL (strength:0.290)
+2026-03-20 21:59:22,552 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 21:59:53,112 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 21:59:56,411 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 21:59:56,413 [INFO] 
+--- SOLUSDT ---
+2026-03-20 21:59:57,663 [INFO] [PRICE] $89.0600
+2026-03-20 21:59:57,666 [INFO] [TECH] BUY: 9.95% | SELL: 90.05%
+2026-03-20 21:59:58,637 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.290
+2026-03-20 21:59:58,637 [INFO] [FINAL] SOLUSDT: SELL (strength:0.290)
+2026-03-20 21:59:58,638 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 22:00:30,142 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 22:00:32,725 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 22:00:32,727 [INFO] 
+--- SOLUSDT ---
+2026-03-20 22:00:33,325 [INFO] [PRICE] $89.0400
+2026-03-20 22:00:33,332 [INFO] [TECH] BUY: 33.62% | SELL: 66.38%
+2026-03-20 22:00:34,538 [INFO] [SIGNAL] Tech:SELL(66%) F&G:BUY News:HOLD Score:-0.148
+2026-03-20 22:00:34,538 [INFO] [FINAL] SOLUSDT: HOLD (strength:0.148)
+2026-03-20 22:00:34,539 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 22:01:05,106 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 22:01:06,337 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 22:01:06,338 [INFO] 
+--- SOLUSDT ---
+2026-03-20 22:01:06,864 [INFO] [PRICE] $88.9900
+2026-03-20 22:01:06,866 [INFO] [TECH] BUY: 10.00% | SELL: 90.00%
+2026-03-20 22:01:07,670 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.290
+2026-03-20 22:01:07,671 [INFO] [FINAL] SOLUSDT: SELL (strength:0.290)
+2026-03-20 22:01:07,671 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 22:01:37,950 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 22:01:39,338 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 22:01:39,339 [INFO] 
+--- SOLUSDT ---
+2026-03-20 22:01:40,190 [INFO] [PRICE] $88.9200
+2026-03-20 22:01:40,195 [INFO] [TECH] BUY: 11.81% | SELL: 88.19%
+2026-03-20 22:01:40,875 [INFO] [SIGNAL] Tech:SELL(88%) F&G:BUY News:HOLD Score:-0.279
+2026-03-20 22:01:40,877 [INFO] [FINAL] SOLUSDT: SELL (strength:0.279)
+2026-03-20 22:01:40,878 [INFO] [AI] Retraining with latest data...
+2026-03-20 22:01:42,032 [INFO] [AI] Training on CURRENT SOLUSDT data...
+2026-03-20 22:01:42,032 [INFO] [AI] Price range in training: $84.59 - $97.27
+2026-03-20 22:01:42,035 [INFO] [AI] Training samples - BUY: 218 | SELL: 733
+2026-03-20 22:01:42,708 [INFO] [AI] Accuracy: 71.73%
+2026-03-20 22:01:42,714 [INFO] [AI] Model saved! Trained on current SOLUSDT prices
+2026-03-20 22:01:42,714 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 22:02:12,972 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 22:02:14,388 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 22:02:14,389 [INFO] 
+--- SOLUSDT ---
+2026-03-20 22:02:14,660 [INFO] [PRICE] $88.7600
+2026-03-20 22:02:14,662 [INFO] [TECH] BUY: 16.45% | SELL: 83.55%
+2026-03-20 22:02:15,385 [INFO] [SIGNAL] Tech:SELL(84%) F&G:BUY News:HOLD Score:-0.251
+2026-03-20 22:02:15,385 [INFO] [FINAL] SOLUSDT: SELL (strength:0.251)
+2026-03-20 22:02:15,385 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 22:02:45,900 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 22:02:47,377 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 22:02:47,392 [INFO] 
+--- SOLUSDT ---
+2026-03-20 22:02:48,549 [INFO] [PRICE] $88.7700
+2026-03-20 22:02:48,553 [INFO] [TECH] BUY: 11.24% | SELL: 88.76%
+2026-03-20 22:02:49,176 [INFO] [SIGNAL] Tech:SELL(89%) F&G:BUY News:HOLD Score:-0.283
+2026-03-20 22:02:49,176 [INFO] [FINAL] SOLUSDT: SELL (strength:0.283)
+2026-03-20 22:02:49,177 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 22:03:19,562 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 22:03:20,890 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 22:03:20,891 [INFO] 
+--- SOLUSDT ---
+2026-03-20 22:03:21,433 [INFO] [PRICE] $88.7900
+2026-03-20 22:03:21,437 [INFO] [TECH] BUY: 11.24% | SELL: 88.76%
+2026-03-20 22:03:22,073 [INFO] [SIGNAL] Tech:SELL(89%) F&G:BUY News:HOLD Score:-0.283
+2026-03-20 22:03:22,073 [INFO] [FINAL] SOLUSDT: SELL (strength:0.283)
+2026-03-20 22:03:22,073 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 22:03:52,919 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 22:03:54,458 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 22:03:54,459 [INFO] 
+--- SOLUSDT ---
+2026-03-20 22:03:55,313 [INFO] [PRICE] $88.9800
+2026-03-20 22:03:55,315 [INFO] [TECH] BUY: 12.07% | SELL: 87.93%
+2026-03-20 22:03:56,015 [INFO] [SIGNAL] Tech:SELL(88%) F&G:BUY News:HOLD Score:-0.278
+2026-03-20 22:03:56,016 [INFO] [FINAL] SOLUSDT: SELL (strength:0.278)
+2026-03-20 22:03:56,016 [INFO] [WAIT] Sleeping 30s...
+
+2026-03-20 22:18:24,104 [INFO] =======================================================
+2026-03-20 22:18:24,104 [INFO]   AI Trading Bot v3 - Auto Retraining
+2026-03-20 22:18:24,105 [INFO] =======================================================
+2026-03-20 22:18:25,092 [INFO] [TESTNET] Connected to Binance Testnet
+2026-03-20 22:18:25,093 [INFO] [AI] Training fresh model on CURRENT market data...
+2026-03-20 22:18:25,595 [INFO] [AI] Current SOLUSDT price: $88.9300
+2026-03-20 22:18:25,597 [INFO] [AI] Training on CURRENT SOLUSDT data...
+2026-03-20 22:18:25,597 [INFO] [AI] Price range in training: $84.59 - $97.27
+2026-03-20 22:18:25,598 [INFO] [AI] Training samples - BUY: 218 | SELL: 733
+2026-03-20 22:18:26,174 [INFO] [AI] Accuracy: 72.25%
+2026-03-20 22:18:26,198 [INFO] [AI] Model saved! Trained on current SOLUSDT prices
+2026-03-20 22:18:26,198 [INFO] [BOT] Trading: SOLUSDT
+2026-03-20 22:18:26,198 [INFO] -------------------------------------------------------
+2026-03-20 22:18:26,506 [INFO] [BALANCE] $10000.00 | Per coin: $10000.00
+2026-03-20 22:18:28,462 [INFO] [F&G] Score: 11 (Extreme Fear)
+2026-03-20 22:18:28,467 [INFO] 
+--- SOLUSDT ---
+2026-03-20 22:18:29,331 [INFO] [PRICE] $88.9000
+2026-03-20 22:18:29,334 [INFO] [TECH] BUY: 10.35% | SELL: 89.65%
+2026-03-20 22:18:29,987 [INFO] [SIGNAL] Tech:SELL(90%) F&G:BUY News:HOLD Score:-0.288
+2026-03-20 22:18:29,988 [INFO] [FINAL] SOLUSDT: SELL (strength:0.288)
+2026-03-20 22:18:29,988 [INFO] [WAIT] Sleeping 60s...
+
