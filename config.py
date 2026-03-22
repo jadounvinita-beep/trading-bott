@@ -11,7 +11,7 @@ CONFIG = {
     "api_secret": "Cvz8svfgCNfxR9f8ukUuLJIoxpi2I9fYsePiDvMv5MaaQdRXMnJIDS7wdqjnYqut",  # Leave empty - use environment variables
 
     # ── Trading ───────────────────────────────────────────
-    "symbol":   "SOLUSDT",   # Coin to trade
+    "symbols":   ["SOLUSDT"],   # Coin to trade
     "interval": "1m",        # 1 minute candles for scalping
 
     # ── Safety ────────────────────────────────────────────
